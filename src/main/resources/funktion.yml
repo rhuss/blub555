@@ -1,0 +1,10 @@
+---
+flows:
+- steps:
+  - kind: endpoint
+    uri: http-get:https://localhost/hello
+  - kind: log
+    message: hello
+    loggingLevel: INFO
+  - kind: endpoint
+    uri: http-get:https://localhost/hello
